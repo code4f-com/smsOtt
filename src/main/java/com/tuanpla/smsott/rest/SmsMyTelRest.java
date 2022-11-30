@@ -50,9 +50,6 @@ public class SmsMyTelRest {
     }
     private static final Account account = new Account(null, USER, PASS, IP_ALLOW);
 
-    public static void main(String[] args) {
-        LogUtils.debug(account.validIP("103.85.106.89"));
-    }
     @Autowired
     protected HttpServletRequest request;
     @Autowired
@@ -77,13 +74,13 @@ public class SmsMyTelRest {
             var _message = HttpUtil.getString(request, "message");
             var _timeSend = HttpUtil.getString(request, "timeSend");
             var _transId = HttpUtil.getString(request, "transId");
-            var _scret = HttpUtil.getString(request, "secret");
+            var _secret = HttpUtil.getString(request, "secret");
             HttpUtil.debugParam(request);
             if (!account.getUser().equals(_user)) {
                 return result.fail(RESULT.USER_NOT_FOUND);
             }
             String ownerScret = Md5.encryptMD5(account.getPass() + _transId);
-            if (!ownerScret.equals(_scret)) {
+            if (!ownerScret.equals(_secret)) {
                 return result.fail(RESULT.SECRET_NOT_VALID);
             }
             Date sendTime = DateProc.string2Date(_timeSend, "yyyy-MM-dd HH:mm:ss");
