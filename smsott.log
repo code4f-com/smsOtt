@@ -4033,3 +4033,24 @@ Caused by: java.sql.SQLException: Access denied for user 'smsott'@'localhost' (u
 2022-11-30 11:07:16.684  INFO 4239 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-11-30 11:07:16.700  INFO 4239 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : dbMysql - Shutdown initiated...
 2022-11-30 11:07:16.716  INFO 4239 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : dbMysql - Shutdown completed.
+2022-12-01 10:48:30.927  INFO 14292 --- [main] c.tuanpla.smsott.SmsOttApplicationTests  : Starting SmsOttApplicationTests using Java 11.0.12 on COMPANY with PID 14292 (started by tuanp in D:\Project\CompWork\GW\SmsOtt)
+2022-12-01 10:48:30.929  INFO 14292 --- [main] c.tuanpla.smsott.SmsOttApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2022-12-01 10:48:31.980  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-01 10:48:31.986  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-12-01 10:48:32.005  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JDBC repository interfaces.
+2022-12-01 10:48:32.016  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2022-12-01 10:48:32.030  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-12-01 10:48:32.037  INFO 14292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+2022-12-01 10:48:32.889  INFO 14292 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-12-01 10:48:33.014  INFO 14292 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.12.Final
+2022-12-01 10:48:33.202  INFO 14292 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-12-01 10:48:33.436  INFO 14292 --- [main] com.zaxxer.hikari.HikariDataSource       : dbMysql - Starting...
+2022-12-01 10:48:34.028  INFO 14292 --- [main] com.zaxxer.hikari.HikariDataSource       : dbMysql - Start completed.
+2022-12-01 10:48:34.066  INFO 14292 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2022-12-01 10:48:34.740  INFO 14292 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-12-01 10:48:34.747  INFO 14292 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-12-01 10:48:35.483  WARN 14292 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-12-01 10:48:36.717  INFO 14292 --- [main] c.tuanpla.smsott.SmsOttApplicationTests  : Started SmsOttApplicationTests in 6.291 seconds (JVM running for 7.722)
+2022-12-01 10:48:36.880  INFO 14292 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-12-01 10:48:36.883  INFO 14292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : dbMysql - Shutdown initiated...
+2022-12-01 10:48:36.905  INFO 14292 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : dbMysql - Shutdown completed.
