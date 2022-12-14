@@ -40,6 +40,7 @@ public class SmsMyTelRest {
 //    private static final String[] ips = {"*", "127.0.0.1"};
     private static final String RANG_1 = "65.18.116.160/27";
     private static final String RANG_2 = "103.85.106.32/27";
+    private static final String RANG_3 = "103.85.107.0/24";
     private static final List<String> IP_ALLOW = new ArrayList<>();
 
     static {
@@ -47,6 +48,7 @@ public class SmsMyTelRest {
         IP_ALLOW.add("103.85.106.83");
         IP_ALLOW.addAll(Arrays.asList(toArray(RANG_1)));
         IP_ALLOW.addAll(Arrays.asList(toArray(RANG_2)));
+        IP_ALLOW.addAll(Arrays.asList(toArray(RANG_3)));
     }
     private static final Account account = new Account(null, USER, PASS, IP_ALLOW);
 
