@@ -4,7 +4,7 @@
  */
 package com.tuanpla.smsott.myenum;
 
-import com.tuanpla.utils.string.StringUtils;
+import com.tuanpla.utils.common.MyString;
 
 /**
  *
@@ -34,7 +34,7 @@ public enum RESULT {
     public static RESULT getResultByname(String name) {
         RESULT result = null;
         for (RESULT one : RESULT.values()) {
-            if (!StringUtils.isEmpty(name) && one.name().equals(name)) {
+            if (!MyString.isEmpty(name) && one.name().equals(name)) {
                 result = one;
                 break;
             }
